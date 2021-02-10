@@ -2,7 +2,7 @@
 
 print("Greetings from main.py ")
 
-print("Greetings from jag branch")
+print("Greetings from main branch")
 
 a = 99 
 
