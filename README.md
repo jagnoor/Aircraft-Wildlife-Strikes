@@ -19,8 +19,8 @@ The dataset contains a record of each reported wildlife strike of a military, co
 
 
 Rough Task List:
-Dataload and cleanup - Alyssa and Molly
+Dataload and cleanup - Alyssa and Molly  
+Question 1 & 2 graph + analysis - Jag and Selom  
+Question 3 & 4 graph + analysis - Alyssa and Molly  
 
-Question 1 & 2 graph + analysis - Jag and Selom
-Question 3 & 4 graph + analysis - Alyssa and Molly
 
