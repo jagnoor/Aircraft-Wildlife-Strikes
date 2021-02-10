@@ -14,7 +14,9 @@ Project Desc:We’ll study 14 years of FAA data on aircraft wildlife strikes <br
 3. Where is the aircraft most likely to get damages during a crash? (Pie chart possibly)
 4. Find airport data to use to compare w/Q4 results (i.e. are airports just getting busier and more flights=more birds hit)
 
-Datasets: [FAA 1990-2015 data found on Kaggle](https://www.kaggle.com/faa/wildlife-strikes)
+Datasets: [FAA 1990-2015 data found on Kaggle](https://www.kaggle.com/faa/wildlife-strikes)  
+The dataset contains a record of each reported wildlife strike of a military, commercial, or civil aircraft between 1990 and 2015. Each row contains the incident date, aircraft operator, aircraft make and model, engine make and model, airport name and location, species name and quantity, and aircraft damage.
+
 
 Rough Task List:
 Dataload and cleanup - Alyssa and Molly
