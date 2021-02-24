@@ -18,9 +18,4 @@ Datasets: [FAA 1990-2015 data found on Kaggle](https://www.kaggle.com/faa/wildli
 The dataset contains a record of each reported wildlife strike of a military, commercial, or civil aircraft between 1990 and 2015. Each row contains the incident date, aircraft operator, aircraft make and model, engine make and model, airport name and location, species name and quantity, and aircraft damage.
 
 
-Rough Task List:
-Dataload and cleanup - Alyssa and Molly  
-Question 1 & 2 graph + analysis - Jag and Selom  
-Question 3 & 4 graph + analysis - Alyssa and Molly  
-
 
