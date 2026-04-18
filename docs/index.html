@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aircraft Wildlife Strikes Analysis (1990-2015)</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f7fa;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1a365d 0%, #2d5016 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .hero p { font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        .stat-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .stat-card .number { font-size: 2rem; font-weight: 700; color: #1a365d; }
+        .stat-card .label { font-size: 0.9rem; color: #666; margin-top: 0.25rem; }
+        .reports {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .report-card {
+            background: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: block;
+        }
+        .report-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .report-card h3 { color: #1a365d; margin-bottom: 0.5rem; }
+        .report-card ul { margin-top: 0.5rem; padding-left: 1.2rem; color: #555; }
+        .report-card ul li { margin-bottom: 0.25rem; }
+        h2 { color: #1a365d; margin-bottom: 1rem; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .gallery figure { margin: 0; }
+        .gallery figcaption {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+            border-top: 1px solid #e2e8f0;
+            margin-top: 2rem;
+        }
+        .footer a { color: #1a365d; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Aircraft Wildlife Strikes Analysis</h1>
+        <p>A comprehensive analysis of 174,104 FAA wildlife strike records from 1990 to 2015, investigating which birds pose the greatest danger to aircraft, seasonal patterns, geographic hotspots, and damage characteristics.</p>
+    </div>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat-card">
+                <div class="number">174,104</div>
+                <div class="label">Total Strike Incidents</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">25</div>
+                <div class="label">Years of Data (1990-2015)</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">96.9%</div>
+                <div class="label">Bird Strikes</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">9.41%</div>
+                <div class="label">Strikes Causing Damage</div>
+            </div>
+        </div>
+
+        <h2>Full Analysis Reports</h2>
+        <div class="reports">
+            <a href="planeVsBird_1.html" class="report-card">
+                <h3>Part 1: Species, Seasons &amp; Geography</h3>
+                <p>Analyzing which birds are most dangerous, seasonal strike patterns, and geographic hotspots.</p>
+                <ul>
+                    <li>Most dangerous bird species</li>
+                    <li>Monthly and seasonal patterns</li>
+                    <li>State and airport rankings</li>
+                    <li>Chi-square hypothesis testing</li>
+                </ul>
+            </a>
+            <a href="planeVsBird_2.html" class="report-card">
+                <h3>Part 2: Trends, Flight Phases &amp; Damage</h3>
+                <p>Examining temporal trends, flight phase risks, and aircraft damage patterns.</p>
+                <ul>
+                    <li>Incident trends over time</li>
+                    <li>Flight phase strike distribution</li>
+                    <li>Injuries and fatalities analysis</li>
+                    <li>Aircraft damage location mapping</li>
+                </ul>
+            </a>
+        </div>
+
+        <h2>Key Findings</h2>
+        <div class="gallery">
+            <figure>
+                <img src="Images/DangerousMourningDove.png" alt="Most dangerous bird species">
+                <figcaption>Mourning Dove is the most commonly struck bird species</figcaption>
+            </figure>
+            <figure>
+                <img src="Images/AugustReallySucks.png" alt="Monthly strike patterns">
+                <figcaption>August is the peak month for wildlife strikes</figcaption>
+            </figure>
+            <figure>
+                <img src="Images/Incidentsbyyear.png" alt="Incidents by year">
+                <figcaption>Strike incidents have been increasing over time</figcaption>
+            </figure>
+            <figure>
+                <img src="Images/Flightphase.png" alt="Flight phase distribution">
+                <figcaption>Approach phase accounts for 40% of strikes</figcaption>
+            </figure>
+            <figure>
+                <img src="Images/StrikeDamageONEgraph.png" alt="Strike vs damage comparison">
+                <figcaption>Windshield most struck, but wing/rotor most damaged</figcaption>
+            </figure>
+            <figure>
+                <img src="Images/StrikesPerStateNA.png" alt="Strikes per state">
+                <figcaption>Texas, California, and Florida lead in total strikes</figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Team:</strong> Selom Kwadzo, Molly Sullivan, Jag Singh, Alyssa Kunau</p>
+        <p>Data Source: <a href="https://www.kaggle.com/faa/wildlife-strikes">FAA Wildlife Strikes Database (Kaggle)</a></p>
+    </div>
+</body>
+</html>
